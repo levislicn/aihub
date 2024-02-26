@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">	
+		<title>AIHUB</title>
+    <style>
+      .flex{display:flex;flex-wrap:wrap;margin:10px;align-contents:flex-start;align-items:flex-start}
+      .flex span{margin:5px;color:blue}
+    </style>
+	</head>
+	<body>
+    AI Jargons
+    <hr>
+    <div id="divContent" class="flex">
+      
+    </div>
+    <script>
+      const aWords = [{name:"NeRF",desc:"3D reconstruction from images"},
+                     {name:"3D Gaussian Splatting",desc:"3D reconstruction from images"},
+                     {name:"DiTs",desc:"Diffusion Transformer"}]
+      const divContent = document.getElementById("divContent")
+      aWords.forEach((obj)=>{
+        let spword = document.createElement("span")
+        spword.innerHTML = obj.name
+        divContent.appendChild(spword)
+      })
+    </script>
+    
+	</body>
+</html>
